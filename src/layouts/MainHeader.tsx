@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 
 import useAuth from "../hooks/useAuth";
 import { Button } from "@mui/material";
+import Logo from "../components/Logo";
 
 function MainHeader() {
     const { user, logout } = useAuth();
@@ -22,7 +23,7 @@ function MainHeader() {
                         aria-label="menu"
                         sx={{ mr: 2 }}
                     >
-
+                        <Logo disabledLink={true} />
                     </IconButton>
                     <Typography variant="h6" color="inherit" component="div">
                         Book Store
